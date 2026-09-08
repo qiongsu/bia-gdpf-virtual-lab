@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { AppShell } from '../components/AppShell';
 import { ModuleCard } from '../components/ModuleCard';
+import { sitePath } from '../lib/site';
 
 export default function HomePage() {
   return (
@@ -17,7 +18,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual" role="img" aria-label="User-provided diagram of tracheids, pits, torus structures, and open and sealed water pathways">
-            <img className="hero-structure-image" src="/assets/xylem/tracheid-pits-diagram.png" alt="Diagram of tracheid columns, pits containing tori, and open versus sealed pits" />
+            <img className="hero-structure-image" src={sitePath('/assets/xylem/tracheid-pits-diagram.png')} alt="Diagram of tracheid columns, pits containing tori, and open versus sealed pits" />
             <div className="visual-kicker">BIA–GDPF / virtual learning lab</div>
             <div className="visual-title">Structure becomes flow. Flow becomes insight.</div>
             <div className="visual-legend"><span><i className="legend-dot" /> tracheids + pits</span><span>torus–margo gate</span></div>
